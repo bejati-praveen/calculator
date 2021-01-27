@@ -1,14 +1,15 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Untitled Document</title>
 </head>
 
 <body>
-<table>
-<tr>
-<td valign="top" class="maintxt"><strong class="subheading"><br />LOAN EMI CALCUALTOR </strong><br />
-<script language="javascript" type="text/JavaScript">
+    <table>
+        <tr>
+            <td valign="top" class="maintxt"><strong class="subheading"><br />LOAN EMI CALCUALTOR </strong><br />
+                <script language="javascript" type="text/JavaScript">
 function clearval(docname) {
 docname.txtLoanAmount.value="";
 docname.txtInterestRate.value="";
@@ -96,35 +97,46 @@ return false;
 }
 }
 </script>
-<form name="frmEMI" method="post">
-<table width="90%" border="0" align="left" cellpadding="3" cellspacing="0" class="bdrAll">
+                <form name="frmEMI" method="post">
+                    <table width="90%" border="0" align="left" cellpadding="3" cellspacing="0" class="bdrAll">
 
-<tr>
-<td class="headVr ar" width="24%">Loan Amount (Rs.)</td>
-<td width="76%" align="left"><input type="text" class="input" name="txtLoanAmount" onblur="checkval(document.frmEMI.txtLoanAmount)" size="17"></td>
-</tr>
-<tr>
-<td class="headVr ar" width="24%">Interest Rate (%)</td>
-<td align="left">
-<input type="text" class="input" name="txtInterestRate" onblur="checkval(document.frmEMI.txtInterestRate)" size="17"></td>
-</tr>
-<tr>
-<td class="headVr ar" width="24%">Loan Period (Yrs)</td>
-<td align="left"><input type="text" class="input" name="txtPeriod" onblur="checkval(document.frmEMI.txtPeriod)" size="17"></td>
-</tr>
-<tr>
-<td class="headVr ar" width="24%">Equated Monthly Installment (<b>EMI</b>)</td>
-<td align="left" valign="TOP" class="p2px5px"><input type="text" class="input" name="resultemi" size="10" readonly style="BACKGROUND-COLOR='#ffffCC'" /></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td align="left" valign="TOP">
-<input type="hidden" name="Selectopt" value="Monthly">
-<a href="" onclick="return CalculateValue(document.frmEMI);"><input class="button" type="button" name="Submit" value="Calculate" alt="Calculate"></a>&nbsp;&nbsp;<a href="" onclick="return(clearval(document.frmEMI))"><input type="button" name="Submit" value="Clear" alt="Clear All" class="button"></a></td>
-</tr>
-</table>
-</form> </td>
-</tr>
-</table>
+                        <tr>
+                            <td class="headVr ar" width="24%">Loan Amount (Rs.)</td>
+                            <td width="76%" align="left"><input type="text" class="input" name="txtLoanAmount"
+                                    onblur="checkval(document.frmEMI.txtLoanAmount)" size="17"></td>
+                        </tr>
+                        <tr>
+                            <td class="headVr ar" width="24%">Interest Rate (%)</td>
+                            <td align="left">
+                                <input type="text" class="input" name="txtInterestRate"
+                                    onblur="checkval(document.frmEMI.txtInterestRate)" size="17">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="headVr ar" width="24%">Loan Period (Yrs)</td>
+                            <td align="left"><input type="text" class="input" name="txtPeriod"
+                                    onblur="checkval(document.frmEMI.txtPeriod)" size="17"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="left" valign="TOP">
+                                <input type="hidden" name="Selectopt" value="Monthly">
+                                <a href="" onclick="return CalculateValue(document.frmEMI);"><input class="button"
+                                        type="button" name="Submit" value="Calculate" alt="Calculate"></a>&nbsp;&nbsp;<a
+                                    href="" onclick="return(clearval(document.frmEMI))"><input type="button"
+                                        name="Submit" value="Clear" alt="Clear All" class="button"></a>
+                        </tr>
+                        <tr>
+                            <td class="headVr ar" width="24%">Equated Monthly Installment (<b>EMI</b>)</td>
+                            <td align="left" valign="TOP" class="p2px5px"><input type="text" class="input"
+                                    name="resultemi" size="10" readonly style="BACKGROUND-COLOR:'#ffffCC'" /></td>
+                            
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
